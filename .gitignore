@@ -1,0 +1,73 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Wallets & Secrets
+testnet-wallet.json
+mainnet-wallet.json
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+venv/
+env/
+
+# Build outputs
+.next/
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Hardhat
+artifacts/
+cache/
+typechain-types/
+
+# Data files (large, contain user info)
+data/*.parquet
+data/*.csv
+data/*.json
+!data/sample_data.json
+
+# AI Models (binary, large)
+ai-engine/*.json
+ai-engine/*.png
+!ai-engine/aave_real_metrics.json
+
+# Logs
+*.log
+logs/
+monitor/risk_monitor.log
+monitor/nohup.log
+dashboard/dashboard.log
+tunnel.log
+lt.log
+
+# Monitor data (regenerated)
+monitor/metrics.json
+monitor/events.jsonl
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Deployment artifacts (keep config but not secrets)
+# deployments/ <- KEEP this folder
+
+# Python
+data_collection.log
+.pytest_cache/
+.coverage
+
+# Claude/Cursor
+.cursor/

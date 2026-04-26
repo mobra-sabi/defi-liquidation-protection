@@ -1,0 +1,33 @@
+{
+  "network": "monadTestnet",
+  "chainId": 10143,
+  "deploymentTime": "2026-04-25T19:00:00Z",
+  "simulated": true,
+  "contracts": {
+    "PositionRegistry": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "name": "PositionRegistry",
+      "description": "Stores user protection configurations and permissions",
+      "verificationUrl": "https://testnet.monadexplorer.com/address/0x1234567890123456789012345678901234567890"
+    },
+    "ProtectionExecutor": {
+      "address": "0xABCDEF1234567890ABCDEF1234567890ABCDEF12",
+      "name": "ProtectionExecutor",
+      "description": "Executes protective rebalancing actions",
+      "verificationUrl": "https://testnet.monadexplorer.com/address/0xABCDEF1234567890ABCDEF1234567890ABCDEF12"
+    },
+    "FeeCollector": {
+      "address": "0x9876543210FEDCBA9876543210FEDCBA98765432",
+      "name": "FeeCollector",
+      "description": "Collects and manages protocol fees",
+      "verificationUrl": "https://testnet.monadexplorer.com/address/0x9876543210FEDCBA9876543210FEDCBA98765432"
+    }
+  },
+  "nextSteps": [
+    "Fund deployer wallet with MONAD testnet tokens",
+    "Run: npx hardhat run scripts/deploy.js --network monadTestnet",
+    "Verify contracts on Monad Explorer",
+    "Configure AI executor addresses",
+    "Start Risk Monitor in shadow mode"
+  ]
+}

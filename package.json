@@ -1,0 +1,19 @@
+{
+  "name": "defi-protection-protocol",
+  "version": "0.1.0",
+  "description": "AI-powered DeFi liquidation protection protocol",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network monadTestnet",
+    "test": "hardhat test",
+    "node": "hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.0"
+  }
+}

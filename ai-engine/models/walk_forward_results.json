@@ -1,0 +1,134 @@
+[
+  {
+    "window": "Day 0-180 -> Test 180-270",
+    "train_size": 133,
+    "test_size": 220,
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571428571428571,
+    "fpr": 0.0,
+    "threshold": 0.3,
+    "positives_test": 16
+  },
+  {
+    "window": "Day 90-270 -> Test 270-360",
+    "train_size": 298,
+    "test_size": 249,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "threshold": 0.3,
+    "positives_test": 38
+  },
+  {
+    "window": "Day 180-360 -> Test 360-450",
+    "train_size": 469,
+    "test_size": 709,
+    "precision": 1.0,
+    "recall": 0.9807692307692307,
+    "f1": 0.9902912621359223,
+    "fpr": 0.0,
+    "threshold": 0.3,
+    "positives_test": 156
+  },
+  {
+    "window": "Day 270-450 -> Test 450-540",
+    "train_size": 958,
+    "test_size": 890,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "threshold": 0.6,
+    "positives_test": 83
+  },
+  {
+    "window": "Day 360-540 -> Test 540-630",
+    "train_size": 1599,
+    "test_size": 2770,
+    "precision": 1.0,
+    "recall": 0.9963235294117647,
+    "f1": 0.998158379373849,
+    "fpr": 0.0,
+    "threshold": 0.3,
+    "positives_test": 272
+  },
+  {
+    "window": "Day 450-630 -> Test 630-720",
+    "train_size": 3660,
+    "test_size": 829,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "threshold": 0.3,
+    "positives_test": 58
+  },
+  {
+    "window": "Day 540-720 -> Test 720-810",
+    "train_size": 3599,
+    "test_size": 7511,
+    "precision": 1.0,
+    "recall": 0.9913419913419913,
+    "f1": 0.9956521739130435,
+    "fpr": 0.0,
+    "threshold": 0.7,
+    "positives_test": 462
+  },
+  {
+    "window": "Day 630-810 -> Test 810-900",
+    "train_size": 8340,
+    "test_size": 616,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "threshold": 0.3,
+    "positives_test": 39
+  },
+  {
+    "window": "Day 720-900 -> Test 900-990",
+    "train_size": 8127,
+    "test_size": 1735,
+    "precision": 0.9972826086956522,
+    "recall": 1.0,
+    "f1": 0.998639455782313,
+    "fpr": 0.0007309941520467836,
+    "threshold": 0.7,
+    "positives_test": 367
+  },
+  {
+    "window": "Day 810-990 -> Test 990-1080",
+    "train_size": 2351,
+    "test_size": 2423,
+    "precision": 1.0,
+    "recall": 0.9926470588235294,
+    "f1": 0.996309963099631,
+    "fpr": 0.0,
+    "threshold": 0.3,
+    "positives_test": 136
+  },
+  {
+    "window": "Day 900-1080 -> Test 1080-1170",
+    "train_size": 4158,
+    "test_size": 6298,
+    "precision": 0.9927184466019418,
+    "recall": 1.0,
+    "f1": 0.9963459196102314,
+    "fpr": 0.0010948905109489052,
+    "threshold": 0.3,
+    "positives_test": 818
+  },
+  {
+    "window": "Day 990-1170 -> Test 1170-1260",
+    "train_size": 8721,
+    "test_size": 142,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "threshold": 0.3,
+    "positives_test": 2
+  }
+]

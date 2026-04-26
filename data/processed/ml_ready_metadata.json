@@ -1,0 +1,122 @@
+{
+  "feature_columns": [
+    "health_factor_at_liquidation",
+    "hf_velocity_1h",
+    "hf_velocity_4h",
+    "hf_velocity_24h",
+    "hf_acceleration",
+    "hf_velocity_magnitude",
+    "collateral_price_usd",
+    "debt_price_usd",
+    "price_momentum_24h",
+    "price_momentum_strength",
+    "volatility_regime_encoded",
+    "momentum_regime_encoded",
+    "collateral_volatility_24h",
+    "debt_volatility_24h",
+    "debt_collateral_ratio",
+    "ltv_ratio",
+    "liquidation_buffer",
+    "debt_utilization_ratio",
+    "risk_score",
+    "whale_activity_score",
+    "oracle_deviation",
+    "collateral_liquidation_threshold",
+    "collateral_base_ltv",
+    "debt_liquidity_rate",
+    "debt_variable_rate",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week_sin",
+    "day_of_week_cos",
+    "is_weekend",
+    "collateral_price_momentum_24h",
+    "debt_utilization_ratio",
+    "debt_collateral_ratio",
+    "collateral_AAVE",
+    "collateral_LINK",
+    "collateral_WBTC",
+    "collateral_WETH",
+    "debt_DAI",
+    "debt_USDC",
+    "debt_USDT",
+    "debt_WBTC"
+  ],
+  "target_column": "time_to_liquidation_minutes",
+  "n_features": 41,
+  "dataset_sizes": {
+    "total": 50000,
+    "train": 35000,
+    "val": 5000,
+    "test": 10000
+  },
+  "feature_stats": {
+    "health_factor_at_liquidation": {
+      "mean": 0.949809804,
+      "std": 0.017341979044109335,
+      "min": 0.92,
+      "max": 0.98
+    },
+    "hf_velocity_1h": {
+      "mean": -0.02003606860939249,
+      "std": 0.00998626138640241,
+      "min": -0.06426624004562417,
+      "max": 0.020286303291920802
+    },
+    "hf_velocity_4h": {
+      "mean": -0.08022707558639439,
+      "std": 0.042101435314524066,
+      "min": -0.2759324993505135,
+      "max": 0.0956589932950533
+    },
+    "hf_velocity_24h": {
+      "mean": -0.40104560156271385,
+      "std": 0.21019197037437193,
+      "min": -1.4181834411062664,
+      "max": 0.4097051972831189
+    },
+    "hf_acceleration": {
+      "mean": 2.1006266928184768e-07,
+      "std": 0.014124587271875438,
+      "min": -0.06303678700981111,
+      "max": 0.05622786925834318
+    },
+    "hf_velocity_magnitude": {
+      "mean": 0.08341463452467758,
+      "std": 0.041857858498510356,
+      "min": 1.0594348819064498e-05,
+      "max": 0.28145076563552207
+    },
+    "collateral_price_usd": {
+      "mean": 23222.0513252,
+      "std": 29572.879984562212,
+      "min": 12.92,
+      "max": 71765.98
+    },
+    "debt_price_usd": {
+      "mean": 7114.456638378,
+      "std": 20292.941129175517,
+      "min": 0.9957,
+      "max": 71144.2082
+    },
+    "price_momentum_24h": {
+      "mean": 5.413124056828197e-05,
+      "std": 0.049962570637826303,
+      "min": -0.21689149751201817,
+      "max": 0.20244110332218002
+    },
+    "price_momentum_strength": {
+      "mean": 0.039796058125772964,
+      "std": 0.03020767249361234,
+      "min": 5.949193906083641e-08,
+      "max": 0.21689149751201817
+    }
+  },
+  "target_stats": {
+    "mean": 34.99307277895159,
+    "std": 30.037556883067992,
+    "min": 1.0,
+    "max": 386.51406150920684,
+    "median": 25.844587378171262
+  }
+}

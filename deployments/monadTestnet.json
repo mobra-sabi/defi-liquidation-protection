@@ -1,0 +1,20 @@
+{
+  "network": "monadTestnet",
+  "chainId": 10143,
+  "deployer": "0x8Bc0a39981A5B259696a0854EA6984FDE81A3232",
+  "deploymentTime": "2026-04-26T05:11:39.520Z",
+  "contracts": {
+    "PositionRegistry": {
+      "address": "0x242Eb426481d3C1C2b635bcC8BF801ebC678a4E9",
+      "name": "PositionRegistry"
+    },
+    "ProtectionExecutor": {
+      "address": "0xd5A4caD8e174e09420A9BF51C71A8CA176040C6f",
+      "name": "ProtectionExecutor"
+    },
+    "FeeCollector": {
+      "address": "0x911A050728D684018dAaE15164267e72F52a9A81",
+      "name": "FeeCollector"
+    }
+  }
+}

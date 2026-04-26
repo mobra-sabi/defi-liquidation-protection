@@ -1,0 +1,23 @@
+{
+  "model_type": "xgboost",
+  "trained_on": "real_aave_data",
+  "n_samples": 1000,
+  "n_features": 11,
+  "precision": 1.0,
+  "recall": 0.875,
+  "f1": 0.9333333333333333,
+  "fpr": 0.0,
+  "features": [
+    "timestamp",
+    "collateral_decimals",
+    "debt_decimals",
+    "collateral_price_usd",
+    "debt_price_usd",
+    "collateral_amount_usd",
+    "debt_amount_usd",
+    "hour_of_day",
+    "day_of_week",
+    "is_weekend",
+    "collateral_debt_ratio"
+  ]
+}
