@@ -118,7 +118,7 @@ All verifiable on the explorer.
 
 **Tweet 7 (CTA + dashboard):**
 ```
-Live dashboard: https://defi-protection-monad.loca.lt
+Live dashboard: https://defi.cddc-global.com
 Code: https://github.com/USERNAME/defi-liquidation-protection
 
 Looking for:
@@ -146,7 +146,7 @@ După post:
 ## 📊 Status Live ACUM:
 
 ```
-Dashboard URL:    https://defi-protection-monad.loca.lt
+Dashboard URL:    https://defi.cddc-global.com
 Local Dashboard:  http://localhost:3000
 Monitor:          Running (live_monitor.py)
 Block:            27,940,518+ (continuă să crească)
@@ -169,7 +169,7 @@ tail -f /home/mobra/protocol/monitor/risk_monitor.log
 cat /home/mobra/protocol/monitor/events.jsonl | wc -l
 
 # Deschide dashboard în browser
-echo "https://defi-protection-monad.loca.lt"
+echo "https://defi.cddc-global.com"
 ```
 
 ---

@@ -304,7 +304,7 @@ MIT License - see [LICENSE](LICENSE)
 
 - **GitHub:** [@mobra-sabi](https://github.com/mobra-sabi)
 - **Repo:** [mobra-sabi/defi-liquidation-protection](https://github.com/mobra-sabi/defi-liquidation-protection)
-- **Live Dashboard:** [https://defi-protection-monad.loca.lt](https://defi-protection-monad.loca.lt)
+- **Live Dashboard:** [https://defi.cddc-global.com](https://defi.cddc-global.com)
 
 ---
 
