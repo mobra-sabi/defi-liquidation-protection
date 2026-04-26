@@ -8,17 +8,28 @@ const REPO = 'mobra-sabi/defi-liquidation-protection';
 export async function GET() {
   try {
     // Load all visits
-    let visits: any[] = [];
+    let allVisits: any[] = [];
     try {
       const content = fs.readFileSync(VISITS_FILE, 'utf8');
-      visits = content.trim().split('\n')
+      allVisits = content.trim().split('\n')
         .filter(l => l.trim())
-        .map(l => JSON.parse(l))
-        // Filter out bots
-        .filter(v => v.browser !== 'Bot' && v.browser !== 'curl');
+        .map(l => JSON.parse(l));
     } catch (e) {
       // File doesn't exist yet
     }
+    
+    // Filter: bots/curl explicitly excluded
+    let visits = allVisits.filter(v => v.browser !== 'Bot' && v.browser !== 'curl');
+    
+    // Detect likely automated traffic (same screen + same browser + internal referer = probably bot)
+    const automatedCount = visits.filter(v => {
+      const ref = (v.referer || '').replace(/^https?:\/\//, '').split('/')[0];
+      return ref === 'defi.cddc-global.com' && v.screen === '1920x1080';
+    }).length;
+    const externalVisits = visits.filter(v => {
+      const ref = (v.referer || '').replace(/^https?:\/\//, '').split('/')[0];
+      return ref !== 'defi.cddc-global.com' || v.screen !== '1920x1080';
+    });
     
     // Get GitHub stats
     let githubStats: any = null;
@@ -84,6 +95,8 @@ export async function GET() {
       visits_1h: visits1h.length,
       unique_24h: unique24h,
       unique_total: uniqueAll,
+      automated_traffic: automatedCount,
+      real_visits: externalVisits.length,
       countries: sortObj(countries).slice(0, 10),
       browsers: sortObj(browsers).slice(0, 5),
       devices: sortObj(devices),

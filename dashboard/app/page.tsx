@@ -26,6 +26,8 @@ interface AnalyticsData {
   visits_1h: number;
   unique_24h: number;
   unique_total: number;
+  automated_traffic: number;
+  real_visits: number;
   countries: Array<[string, number]>;
   browsers: Array<[string, number]>;
   devices: Array<[string, number]>;
@@ -299,9 +301,12 @@ export default function Dashboard() {
               <div className="bg-gradient-to-br from-cyan-900/40 to-cyan-800/20 rounded-lg p-4 border border-cyan-500/20">
                 <div className="flex items-center gap-2 mb-1">
                   <Globe className="w-4 h-4 text-cyan-400" />
-                  <span className="text-xs text-cyan-300">Total Visits</span>
+                  <span className="text-xs text-cyan-300">Real Visits</span>
                 </div>
-                <div className="text-2xl font-bold text-white">{analytics.total_visits}</div>
+                <div className="text-2xl font-bold text-white">{analytics.real_visits ?? analytics.total_visits}</div>
+                {analytics.automated_traffic > 0 && (
+                  <div className="text-xs text-gray-500 mt-1">+{analytics.automated_traffic} bots</div>
+                )}
               </div>
               {analytics.github && (
                 <>
