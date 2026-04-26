@@ -112,7 +112,7 @@ All data sourced from real Aave V3 Ethereum via TheGraph (paid subscription):
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/defi-liquidation-protection
+git clone https://github.com/mobra-sabi/defi-liquidation-protection
 cd defi-liquidation-protection
 
 # Install Python dependencies
@@ -302,9 +302,9 @@ MIT License - see [LICENSE](LICENSE)
 
 ## 📬 Contact
 
-- **Twitter:** [@yourusername](https://twitter.com/yourusername)
-- **Email:** your.email@example.com
-- **Discord:** yourusername
+- **GitHub:** [@mobra-sabi](https://github.com/mobra-sabi)
+- **Repo:** [mobra-sabi/defi-liquidation-protection](https://github.com/mobra-sabi/defi-liquidation-protection)
+- **Live Dashboard:** [https://defi-protection-monad.loca.lt](https://defi-protection-monad.loca.lt)
 
 ---
 
